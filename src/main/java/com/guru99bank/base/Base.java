@@ -1,5 +1,6 @@
 package com.guru99bank.base;
 
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -8,7 +9,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 
 public class Base {
 	
@@ -43,7 +47,13 @@ public class Base {
 			
 			System.setProperty("webdriver.gecko.driver", "./Drivers//geckodriver.exe");
 			
-			driver = new FirefoxDriver();
+			FirefoxProfile firefoxProfile = new FirefoxProfile();
+			
+			FirefoxOptions firefoxOptions = new FirefoxOptions();
+			firefoxOptions.setBinary(prop.getProperty("firefox_application"));
+			
+			firefoxOptions.setProfile(firefoxProfile);
+			driver = new FirefoxDriver(firefoxOptions);
 		}
 		
 		driver.manage().deleteAllCookies();
