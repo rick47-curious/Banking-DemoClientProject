@@ -22,11 +22,15 @@ public class LoginPage {
 		/*
 		 *User enters the userId and password and clicks on the Login button 
 		 */
+		
+		driver.findElement(userId).clear();
 		driver.findElement(userId).sendKeys(id);
 		
+		driver.findElement(password).clear();
 		driver.findElement(password).sendKeys(pass);
 		
 		driver.findElement(loginButton).click();
+		
 	}
 	
 	

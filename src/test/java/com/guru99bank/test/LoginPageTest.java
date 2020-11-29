@@ -26,7 +26,7 @@ public class LoginPageTest extends Base {
 	}
 	
 	
-	@BeforeClass
+	@BeforeMethod
 	public void setUp() {
 		
 		driver = initializeBrowser();
@@ -38,16 +38,19 @@ public class LoginPageTest extends Base {
 		
 		LoginPage loginPage = new LoginPage(driver);
 		ManagerHomePage managerHomePage = new ManagerHomePage(driver);
-		
+		try {
 		loginPage.loginUser(id,pass);
 		
 		TestUtil.waitForVisibility(driver,managerHomePage.userName);
 		
-		Assert.assertEquals("Guru99 Bank Manager HomePage", driver.getTitle());
-		
-	}
+		Assert.assertEquals(TestUtil.homePage_Title, driver.getTitle());
+		}catch(Exception e) {
+			driver.switchTo().alert().accept();
+		}
+		}
 	
-	@AfterClass
+	
+	@AfterMethod
 	public void tearDown() {
 		
 		driver.quit();

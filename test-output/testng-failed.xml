@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="userLogin"/>
+          <include name="userLogin" invocation-numbers="1 2 3"/>
         </methods>
       </class> <!-- com.guru99bank.test.LoginPageTest -->
     </classes>

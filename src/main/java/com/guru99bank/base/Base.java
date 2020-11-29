@@ -7,12 +7,17 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.UnexpectedAlertBehaviour;
+import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.remote.CapabilityType;
+
+import com.guru99bank.util.TestUtil;
 
 public class Base {
 	
@@ -51,14 +56,15 @@ public class Base {
 			
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
 			firefoxOptions.setBinary(prop.getProperty("firefox_application"));
-			
+			//to ignore the default behaviour of firefox to dismiss the alert
+			firefoxOptions.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
 			firefoxOptions.setProfile(firefoxProfile);
 			driver = new FirefoxDriver(firefoxOptions);
 		}
 		
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(TestUtil.implicit_Wait_Time, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
 		
 		return driver;
