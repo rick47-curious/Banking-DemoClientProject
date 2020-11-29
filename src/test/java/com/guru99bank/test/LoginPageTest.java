@@ -43,9 +43,6 @@ public class LoginPageTest extends Base {
 		
 		TestUtil.waitForVisibility(driver,managerHomePage.userName);
 		
-		//String welcomeText  = managerHomePage.getUserName();
-		
-		//Assert.assertTrue(welcomeText.contains("mngr296799"));
 		Assert.assertEquals("Guru99 Bank Manager HomePage", driver.getTitle());
 		
 	}
