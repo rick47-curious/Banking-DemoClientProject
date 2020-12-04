@@ -44,8 +44,6 @@ public class LoginPageTest extends Base {
 		
 		TestUtil.waitForVisibility(driver,managerHomePage.getUserElement());
 		
-		//Assert.assertEquals(TestUtil.homePage_Title, driver.getTitle());
-		
 		String userName = managerHomePage.getUserElement().getText();
 		
 		String [] output = userName.split(TestUtil.pattern);
@@ -53,6 +51,8 @@ public class LoginPageTest extends Base {
 		Assert.assertTrue(output[1].substring(1, 5).equals(TestUtil.first_Pattern));
 		
 		Assert.assertTrue(output[1].substring(6).matches(TestUtil.second_Pattern));
+		
+		TestUtil.takeScreenshot(driver);
 		
 		}catch(Exception e) {
 			Alert alert = driver.switchTo().alert();
