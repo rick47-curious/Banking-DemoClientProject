@@ -1,5 +1,6 @@
 package com.guru99bank.util;
 
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -7,9 +8,8 @@ import java.io.IOException;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -17,9 +17,15 @@ public class TestUtil {
 
 	public static int implicit_Wait_Time = 10;
 	public static String homePage_Title = "Guru99 Bank Manager HomePage";
-
-	String data[] = null;
-
+	
+	
+	public static String pattern = ":";
+	public static String first_Pattern = "mngr";
+	//To check for numbers ranging between 0-9 with any repetition
+	public static String second_Pattern = "[0-9]+";
+	
+	
+	
 	public static String[][] readExcelData() {
 
 		try {
@@ -46,6 +52,7 @@ public class TestUtil {
 					data[i][j] = row.getCell(j).toString();
 				}
 			}
+			wb.close();
 			return data;
 		} catch (FileNotFoundException e) {
 
@@ -57,12 +64,14 @@ public class TestUtil {
 		return null;
 	}
 
-	public static void waitForVisibility(WebDriver driver, By locator) {
+	public static void waitForVisibility(WebDriver driver, WebElement element) {
 
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		wait.until(ExpectedConditions.visibilityOf(element));
 	}
+	
+	
 
 	
 }

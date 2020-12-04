@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-29T15:53:56Z" name="Default suite" finished-at="2020-11-29T15:56:34Z" duration-ms="157956">
+  <suite started-at="2020-12-04T12:18:53Z" name="Default suite" finished-at="2020-12-04T12:21:54Z" duration-ms="180514">
     <groups>
     </groups>
-    <test started-at="2020-11-29T15:53:56Z" name="Default test" finished-at="2020-11-29T15:56:34Z" duration-ms="157956">
+    <test started-at="2020-12-04T12:18:53Z" name="Default test" finished-at="2020-12-04T12:21:54Z" duration-ms="180514">
       <class name="com.guru99bank.test.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-11-29T15:53:57Z" name="setUp" finished-at="2020-11-29T15:54:41Z" duration-ms="43093" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-12-04T12:18:55Z" name="setUp" finished-at="2020-12-04T12:19:47Z" duration-ms="51256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="userLogin(java.lang.String, java.lang.String)[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-11-29T15:54:41Z" name="userLogin" data-provider="getData" finished-at="2020-11-29T15:54:50Z" duration-ms="9250" status="PASS">
+        <test-method signature="userLogin(java.lang.String, java.lang.String)[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-12-04T12:19:47Z" name="userLogin" data-provider="getData" finished-at="2020-12-04T12:19:55Z" duration-ms="8512" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-11-29T15:54:50Z" name="tearDown" finished-at="2020-11-29T15:54:53Z" duration-ms="3087" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-12-04T12:19:55Z" name="tearDown" finished-at="2020-12-04T12:19:58Z" duration-ms="2904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-11-29T15:54:53Z" name="setUp" finished-at="2020-11-29T15:55:20Z" duration-ms="27532" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-12-04T12:19:58Z" name="setUp" finished-at="2020-12-04T12:20:25Z" duration-ms="26792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="userLogin(java.lang.String, java.lang.String)[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-11-29T15:55:20Z" name="userLogin" data-provider="getData" finished-at="2020-11-29T15:55:23Z" duration-ms="2568" status="PASS">
+        <test-method signature="userLogin(java.lang.String, java.lang.String)[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-12-04T12:20:25Z" name="userLogin" data-provider="getData" finished-at="2020-12-04T12:20:27Z" duration-ms="2311" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,15 +51,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-11-29T15:55:23Z" name="tearDown" finished-at="2020-11-29T15:55:26Z" duration-ms="2866" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-12-04T12:20:27Z" name="tearDown" finished-at="2020-12-04T12:20:30Z" duration-ms="2876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-11-29T15:55:26Z" name="setUp" finished-at="2020-11-29T15:55:54Z" duration-ms="28617" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-12-04T12:20:30Z" name="setUp" finished-at="2020-12-04T12:21:13Z" duration-ms="42475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="userLogin(java.lang.String, java.lang.String)[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-11-29T15:55:54Z" name="userLogin" data-provider="getData" finished-at="2020-11-29T15:55:57Z" duration-ms="2099" status="PASS">
+        <test-method signature="userLogin(java.lang.String, java.lang.String)[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-12-04T12:21:13Z" name="userLogin" data-provider="getData" finished-at="2020-12-04T12:21:15Z" duration-ms="2427" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,15 +75,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-11-29T15:55:57Z" name="tearDown" finished-at="2020-11-29T15:55:59Z" duration-ms="2700" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-12-04T12:21:15Z" name="tearDown" finished-at="2020-12-04T12:21:18Z" duration-ms="2740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-11-29T15:55:59Z" name="setUp" finished-at="2020-11-29T15:56:29Z" duration-ms="29477" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-12-04T12:21:18Z" name="setUp" finished-at="2020-12-04T12:21:48Z" duration-ms="30408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="userLogin(java.lang.String, java.lang.String)[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-11-29T15:56:29Z" name="userLogin" data-provider="getData" finished-at="2020-11-29T15:56:31Z" duration-ms="2060" status="PASS">
+        <test-method signature="userLogin(java.lang.String, java.lang.String)[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-12-04T12:21:48Z" name="userLogin" data-provider="getData" finished-at="2020-12-04T12:21:51Z" duration-ms="2537" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-11-29T15:56:31Z" name="tearDown" finished-at="2020-11-29T15:56:34Z" duration-ms="2697" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99bank.test.LoginPageTest@8909f18]" started-at="2020-12-04T12:21:51Z" name="tearDown" finished-at="2020-12-04T12:21:54Z" duration-ms="3223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

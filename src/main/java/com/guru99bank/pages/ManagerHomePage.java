@@ -2,6 +2,7 @@ package com.guru99bank.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class ManagerHomePage {
 
@@ -12,10 +13,10 @@ public class ManagerHomePage {
 		this.driver = driver;
 	}
 	
-	public By userName = By.xpath("(//table[@align='center'])[2]//tr[3]/td[1]");
+	private By userName = By.xpath("(//table[@align='center'])[2]//tr[3]/td[1]");
 	
-	public String getUserName() {
+	public WebElement getUserElement() {
 		
-		return driver.findElement(userName).getText();
+		return driver.findElement(userName);
 	}
 }

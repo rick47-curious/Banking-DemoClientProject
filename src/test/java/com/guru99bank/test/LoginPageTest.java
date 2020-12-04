@@ -1,6 +1,7 @@
 package com.guru99bank.test;
 
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -41,11 +42,22 @@ public class LoginPageTest extends Base {
 		try {
 		loginPage.loginUser(id,pass);
 		
-		TestUtil.waitForVisibility(driver,managerHomePage.userName);
+		TestUtil.waitForVisibility(driver,managerHomePage.getUserElement());
 		
-		Assert.assertEquals(TestUtil.homePage_Title, driver.getTitle());
+		//Assert.assertEquals(TestUtil.homePage_Title, driver.getTitle());
+		
+		String userName = managerHomePage.getUserElement().getText();
+		
+		String [] output = userName.split(TestUtil.pattern);
+		
+		Assert.assertTrue(output[1].substring(1, 5).equals(TestUtil.first_Pattern));
+		
+		Assert.assertTrue(output[1].substring(6).matches(TestUtil.second_Pattern));
+		
 		}catch(Exception e) {
-			driver.switchTo().alert().accept();
+			Alert alert = driver.switchTo().alert();
+			System.out.println(alert.getText());
+			alert.accept();
 		}
 		}
 	
